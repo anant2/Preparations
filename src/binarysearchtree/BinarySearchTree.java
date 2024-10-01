@@ -11,8 +11,8 @@ public class BinarySearchTree {
             root = newNode;
             return true;
         }
+        Node temp = root;
         while(true) {
-            Node temp = root;
             if(value < temp.value) {
                 if(temp.left == null) {
                     temp.left = newNode;
